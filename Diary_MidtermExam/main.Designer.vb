@@ -68,10 +68,10 @@ Partial Class main
         '
         'tbTitle
         '
-        Me.tbTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbTitle.Location = New System.Drawing.Point(131, 165)
         Me.tbTitle.Name = "tbTitle"
-        Me.tbTitle.Size = New System.Drawing.Size(570, 31)
+        Me.tbTitle.Size = New System.Drawing.Size(570, 35)
         Me.tbTitle.TabIndex = 4
         '
         'tbContent
@@ -80,7 +80,7 @@ Partial Class main
         Me.tbContent.Location = New System.Drawing.Point(131, 236)
         Me.tbContent.Multiline = True
         Me.tbContent.Name = "tbContent"
-        Me.tbContent.Size = New System.Drawing.Size(570, 203)
+        Me.tbContent.Size = New System.Drawing.Size(570, 257)
         Me.tbContent.TabIndex = 5
         '
         'Label1

@@ -4,7 +4,9 @@ Public Class main
     Public Property token As Integer  ' ID OF LOGGED-IN USER
     Dim mysqlconn As MySqlConnection
     Dim command As MySqlCommand
-    Dim READER As MySqlDataReader 'READS SQL OUTPUT
+    Dim READER As MySqlDataReader   'READS SQL OUTPUT
+    Dim thisDate As Date            'DATE CLASS    
+
 
     Private Function fetchName(ByVal uid As Integer) As String
         mysqlconn = New MySqlConnection
@@ -42,7 +44,7 @@ Public Class main
         ' GREET SESSION USER
         Dim sUserFNAME As String
         sUserFNAME = fetchName(token)
-        labelGreet.Text = "Welcome, '" & sUserFNAME & "'"
+        labelGreet.Text = "Welcome, " & sUserFNAME
 
         mysqlconn = New MySqlConnection
         mysqlconn.ConnectionString =
@@ -93,5 +95,24 @@ Public Class main
         Finally
             mysqlconn.Dispose()
         End Try
+    End Sub
+
+
+    Private Sub btnSave_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSave.Click
+        Try
+            mysqlconn.Open()
+            Dim query As String
+
+            query = "INSERT INTO diary.entries (user_id, title, content, modified)  VALUES ('" & token & "', '" & tbTitle.Text & "', '" & tbContent.Text & "', '" & Format(Now, "yyyy-M-dd") & "' "
+            command = New MySqlCommand(query, mysqlconn)
+
+            mysqlconn.Close()
+
+        Catch ex As MySqlException
+            MessageBox.Show(ex.Message)
+        Finally
+            mysqlconn.Dispose()
+        End Try
+
     End Sub
 End Class

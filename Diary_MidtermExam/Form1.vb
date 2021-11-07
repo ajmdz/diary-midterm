@@ -29,6 +29,8 @@ Public Class Form1
             End While
 
             If count >= 1 Then      ' LOGIN SUCCESSFUL
+                MessageBox.Show("Log-in Successful")
+
                 ' PASS USER ID TO INSTANCE OF MAIN FORM
                 Dim OBJ As New main
                 OBJ.token = id
