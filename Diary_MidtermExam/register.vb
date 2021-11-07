@@ -58,7 +58,7 @@ Public Class register
             Dim query As String
             query = "INSERT INTO diary.users (fname, lname, dob, email, username, password)  VALUES ('" & tbFName.Text & "', '" & tbLName.Text & "', '" & tbDOB.Text & "', '" & tbEmail.Text & "', '" & tbUser.Text & "', '" & tbPass.Text & "')"
             command = New MySqlCommand(query, mysqlconn)
-            READER = command.ExecuteReader
+            ' READER = command.ExecuteReader
 
             ' DOUBLE CHECK IF SUCCESSFULLY REGISTERED
             If isRegistered(tbUser.Text) Then

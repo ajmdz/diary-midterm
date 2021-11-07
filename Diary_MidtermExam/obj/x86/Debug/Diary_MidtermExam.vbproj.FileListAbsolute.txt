@@ -9,3 +9,4 @@ C:\Users\conta\Documents\Visual Studio 2010\Projects\Diary_MidtermExam\Diary_Mid
 C:\Users\conta\Documents\Visual Studio 2010\Projects\Diary_MidtermExam\Diary_MidtermExam\obj\x86\Debug\Diary_MidtermExam.pdb
 C:\Users\conta\Documents\Visual Studio 2010\Projects\Diary_MidtermExam\Diary_MidtermExam\obj\x86\Debug\Diary_MidtermExam.register.resources
 C:\Users\conta\Documents\Visual Studio 2010\Projects\Diary_MidtermExam\Diary_MidtermExam\obj\x86\Debug\Diary_MidtermExam.main.resources
+C:\Users\conta\Documents\Visual Studio 2010\Projects\Diary_MidtermExam\Diary_MidtermExam\obj\x86\Debug\Diary_MidtermExam.vbprojResolveAssemblyReference.cache
