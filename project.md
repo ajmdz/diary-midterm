@@ -1,8 +1,10 @@
 # Diary
 
-[Midterm Exam (google.com)](https://classroom.google.com/c/MzgxOTA1MDU4NDg4/a/NDIzMjE0NjcwNzkz/details)
+[Link](https://classroom.google.com/c/MzgxOTA1MDU4NDg4/a/NDIzMjE0NjcwNzkz/details)
 
 
+
+## SPECIFICATIONS
 
 * Username and password
   * New user button -> registration form
@@ -11,7 +13,7 @@
   * Date
   * Title
   * Content
-* Challenger questions - extra features
+* Challenger - extra features
   * Username must be unique in registration
     - if there is an existing user with duplicate username
   * Entries combobox will only show entries from the same user
@@ -31,6 +33,27 @@ Database Tables
 
 
 
-# DATABASE DESIGN
+## DATABASE DESIGN
 
-![image-20211108032803459](C:\Users\conta\AppData\Roaming\Typora\typora-user-images\image-20211108032803459.png)
+![image-20211108032803459](.\image-20211108032803459.png)
+
+
+
+
+
+## TO DO
+
+- [ ] EDIT, SAVE, DELETE FUNCTIONALITY FOR ENTRIES
+- [ ] 
+
+
+
+
+
+## BUGS
+
+```VB
+
+        
+```
+
