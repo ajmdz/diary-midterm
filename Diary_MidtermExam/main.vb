@@ -80,7 +80,7 @@ Public Class main
             Dim query As String
 
             ' FILTER COMBOBOX TO ENTRIES BY SESSION USER ONLY
-            query = "SELECT * FROM diary.entries where title= '" & cbTitles.Text & "' and user_id= '" & token & "'"
+            query = "SELECT * FROM diary.entries where title= '" & cbTitles.Text & "' and user_id= '" & token & "' "
             command = New MySqlCommand(query, mysqlconn)
             READER = command.ExecuteReader
 

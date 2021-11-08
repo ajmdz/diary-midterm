@@ -37,6 +37,7 @@ Partial Class register
         Me.tbPass = New System.Windows.Forms.TextBox()
         Me.btnRegister = New System.Windows.Forms.Button()
         Me.btnBack = New System.Windows.Forms.Button()
+        Me.btnEdit = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -162,7 +163,7 @@ Partial Class register
         '
         Me.btnRegister.Location = New System.Drawing.Point(185, 323)
         Me.btnRegister.Name = "btnRegister"
-        Me.btnRegister.Size = New System.Drawing.Size(165, 29)
+        Me.btnRegister.Size = New System.Drawing.Size(88, 29)
         Me.btnRegister.TabIndex = 13
         Me.btnRegister.Text = "REGISTER"
         Me.btnRegister.UseVisualStyleBackColor = True
@@ -176,11 +177,21 @@ Partial Class register
         Me.btnBack.Text = "GO BACK"
         Me.btnBack.UseVisualStyleBackColor = True
         '
+        'btnEdit
+        '
+        Me.btnEdit.Location = New System.Drawing.Point(302, 323)
+        Me.btnEdit.Name = "btnEdit"
+        Me.btnEdit.Size = New System.Drawing.Size(93, 28)
+        Me.btnEdit.TabIndex = 15
+        Me.btnEdit.Text = "EDIT"
+        Me.btnEdit.UseVisualStyleBackColor = True
+        '
         'register
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(578, 385)
+        Me.Controls.Add(Me.btnEdit)
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.btnRegister)
         Me.Controls.Add(Me.tbPass)
@@ -217,4 +228,5 @@ Partial Class register
     Friend WithEvents tbPass As System.Windows.Forms.TextBox
     Friend WithEvents btnRegister As System.Windows.Forms.Button
     Friend WithEvents btnBack As System.Windows.Forms.Button
+    Friend WithEvents btnEdit As System.Windows.Forms.Button
 End Class
