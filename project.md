@@ -44,7 +44,7 @@ Database Tables
 ## TO DO
 
 - [ ] EDIT, SAVE, DELETE FUNCTIONALITY FOR ENTRIES
-- [ ] 
+- [ ] EDIT BUTTON IN REGISTRATION
 
 
 
