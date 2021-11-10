@@ -36,6 +36,39 @@ Public Class main
         Return name
     End Function
 
+    'FUNCTION FOR REFRESHING COMBOBOX
+    Public Sub cbRefresh()
+        mysqlconn = New MySqlConnection
+        mysqlconn.ConnectionString =
+            "server=localhost;userid=root;database=diary"
+
+        'Clear the combobox
+        cbTitles.SelectedIndex = -1
+        cbTitles.DataSource = Nothing
+        cbTitles.Items.Clear()
+
+        Try
+            mysqlconn.Open()
+
+            'ONLY ADD ENTRIES THAT ARE OWNED BY CURRENT USER TO THE COMBOBOX
+            query = "SELECT * FROM diary.entries where user_id= '" & token & "'"
+            command = New MySqlCommand(query, mysqlconn)
+            READER = command.ExecuteReader
+
+            While READER.Read
+                Dim sTitle = READER.GetString("title")
+                cbTitles.Items.Add(sTitle)
+            End While
+
+            mysqlconn.Close()
+        Catch ex As MySqlException
+            MessageBox.Show(ex.Message)
+        Finally
+            mysqlconn.Dispose()
+        End Try
+
+    End Sub
+
     'FUNCTION FOR FETCHING ENTRY_ID VIA TITLE AND USER_ID
     Private Function fetchEID(ByVal title As String, ByVal uid As Integer)
         Dim EID As Integer
@@ -153,7 +186,7 @@ Public Class main
         Finally
             mysqlconn.Dispose()
         End Try
-
+        cbRefresh()
     End Sub
 
     ' DELETE FUNCTIONALITY
@@ -183,7 +216,7 @@ Public Class main
         Finally
             mysqlconn.Dispose()
         End Try
-
+        cbRefresh()
     End Sub
 
     Private Sub btnEdit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEdit.Click
@@ -213,5 +246,8 @@ Public Class main
         Finally
             mysqlconn.Dispose()
         End Try
+        cbRefresh()
     End Sub
+
+
 End Class

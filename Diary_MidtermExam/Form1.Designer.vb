@@ -44,18 +44,20 @@ Partial Class Form1
         '
         'tbUser
         '
-        Me.tbUser.Location = New System.Drawing.Point(183, 83)
+        Me.tbUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbUser.Location = New System.Drawing.Point(182, 80)
         Me.tbUser.Name = "tbUser"
         Me.tbUser.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.tbUser.Size = New System.Drawing.Size(262, 20)
+        Me.tbUser.Size = New System.Drawing.Size(262, 31)
         Me.tbUser.TabIndex = 1
         '
         'tbPass
         '
-        Me.tbPass.Location = New System.Drawing.Point(183, 121)
+        Me.tbPass.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbPass.Location = New System.Drawing.Point(182, 118)
         Me.tbPass.Name = "tbPass"
         Me.tbPass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.tbPass.Size = New System.Drawing.Size(261, 20)
+        Me.tbPass.Size = New System.Drawing.Size(261, 31)
         Me.tbPass.TabIndex = 2
         '
         'Label2

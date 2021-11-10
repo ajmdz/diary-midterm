@@ -37,7 +37,6 @@ Partial Class register
         Me.tbPass = New System.Windows.Forms.TextBox()
         Me.btnRegister = New System.Windows.Forms.Button()
         Me.btnBack = New System.Windows.Forms.Button()
-        Me.btnEdit = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -55,7 +54,7 @@ Partial Class register
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Label2.Location = New System.Drawing.Point(50, 232)
+        Me.Label2.Location = New System.Drawing.Point(50, 233)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(110, 25)
         Me.Label2.TabIndex = 1
@@ -66,7 +65,7 @@ Partial Class register
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Label3.Location = New System.Drawing.Point(50, 194)
+        Me.Label3.Location = New System.Drawing.Point(95, 196)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(65, 25)
         Me.Label3.TabIndex = 2
@@ -77,7 +76,7 @@ Partial Class register
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Label4.Location = New System.Drawing.Point(50, 271)
+        Me.Label4.Location = New System.Drawing.Point(54, 273)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(106, 25)
         Me.Label4.TabIndex = 3
@@ -88,7 +87,7 @@ Partial Class register
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Label5.Location = New System.Drawing.Point(50, 76)
+        Me.Label5.Location = New System.Drawing.Point(44, 76)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(116, 25)
         Me.Label5.TabIndex = 4
@@ -99,7 +98,7 @@ Partial Class register
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Label6.Location = New System.Drawing.Point(50, 116)
+        Me.Label6.Location = New System.Drawing.Point(45, 117)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(115, 25)
         Me.Label6.TabIndex = 5
@@ -110,7 +109,7 @@ Partial Class register
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Label7.Location = New System.Drawing.Point(50, 155)
+        Me.Label7.Location = New System.Drawing.Point(53, 156)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(107, 25)
         Me.Label7.TabIndex = 6
@@ -118,45 +117,51 @@ Partial Class register
         '
         'tbFName
         '
-        Me.tbFName.Location = New System.Drawing.Point(185, 80)
+        Me.tbFName.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbFName.Location = New System.Drawing.Point(172, 70)
         Me.tbFName.Name = "tbFName"
-        Me.tbFName.Size = New System.Drawing.Size(234, 20)
+        Me.tbFName.Size = New System.Drawing.Size(234, 35)
         Me.tbFName.TabIndex = 7
         '
         'tbLName
         '
-        Me.tbLName.Location = New System.Drawing.Point(185, 121)
+        Me.tbLName.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbLName.Location = New System.Drawing.Point(172, 111)
         Me.tbLName.Name = "tbLName"
-        Me.tbLName.Size = New System.Drawing.Size(234, 20)
+        Me.tbLName.Size = New System.Drawing.Size(234, 35)
         Me.tbLName.TabIndex = 8
         '
         'tbDOB
         '
-        Me.tbDOB.Location = New System.Drawing.Point(185, 160)
+        Me.tbDOB.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbDOB.Location = New System.Drawing.Point(172, 150)
         Me.tbDOB.Name = "tbDOB"
-        Me.tbDOB.Size = New System.Drawing.Size(234, 20)
+        Me.tbDOB.Size = New System.Drawing.Size(234, 35)
         Me.tbDOB.TabIndex = 9
         '
         'tbEmail
         '
-        Me.tbEmail.Location = New System.Drawing.Point(185, 200)
+        Me.tbEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbEmail.Location = New System.Drawing.Point(172, 190)
         Me.tbEmail.Name = "tbEmail"
-        Me.tbEmail.Size = New System.Drawing.Size(234, 20)
+        Me.tbEmail.Size = New System.Drawing.Size(234, 35)
         Me.tbEmail.TabIndex = 10
         '
         'tbUser
         '
-        Me.tbUser.Location = New System.Drawing.Point(185, 237)
+        Me.tbUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbUser.Location = New System.Drawing.Point(172, 227)
         Me.tbUser.Name = "tbUser"
-        Me.tbUser.Size = New System.Drawing.Size(234, 20)
+        Me.tbUser.Size = New System.Drawing.Size(234, 35)
         Me.tbUser.TabIndex = 11
         '
         'tbPass
         '
-        Me.tbPass.Location = New System.Drawing.Point(185, 277)
+        Me.tbPass.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbPass.Location = New System.Drawing.Point(172, 267)
         Me.tbPass.Name = "tbPass"
         Me.tbPass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.tbPass.Size = New System.Drawing.Size(234, 20)
+        Me.tbPass.Size = New System.Drawing.Size(234, 35)
         Me.tbPass.TabIndex = 12
         '
         'btnRegister
@@ -177,21 +182,11 @@ Partial Class register
         Me.btnBack.Text = "GO BACK"
         Me.btnBack.UseVisualStyleBackColor = True
         '
-        'btnEdit
-        '
-        Me.btnEdit.Location = New System.Drawing.Point(302, 323)
-        Me.btnEdit.Name = "btnEdit"
-        Me.btnEdit.Size = New System.Drawing.Size(93, 28)
-        Me.btnEdit.TabIndex = 15
-        Me.btnEdit.Text = "EDIT"
-        Me.btnEdit.UseVisualStyleBackColor = True
-        '
         'register
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(578, 385)
-        Me.Controls.Add(Me.btnEdit)
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.btnRegister)
         Me.Controls.Add(Me.tbPass)
@@ -228,5 +223,4 @@ Partial Class register
     Friend WithEvents tbPass As System.Windows.Forms.TextBox
     Friend WithEvents btnRegister As System.Windows.Forms.Button
     Friend WithEvents btnBack As System.Windows.Forms.Button
-    Friend WithEvents btnEdit As System.Windows.Forms.Button
 End Class

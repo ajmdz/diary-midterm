@@ -74,7 +74,7 @@ Public Class register
     End Sub
 
     ' EDIT BUTTON INCOMPLETE
-    Private Sub btnEdit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEdit.Click
+    Private Sub btnEdit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         mysqlconn = New MySqlConnection
         mysqlconn.ConnectionString =
             "server=localhost;userid=root;database=diary"

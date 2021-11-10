@@ -107,7 +107,7 @@ Partial Class main
         '
         Me.cbTitles.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbTitles.FormattingEnabled = True
-        Me.cbTitles.Location = New System.Drawing.Point(638, 116)
+        Me.cbTitles.Location = New System.Drawing.Point(648, 83)
         Me.cbTitles.Name = "cbTitles"
         Me.cbTitles.Size = New System.Drawing.Size(196, 28)
         Me.cbTitles.TabIndex = 8
@@ -143,11 +143,11 @@ Partial Class main
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(677, 88)
+        Me.Label4.Location = New System.Drawing.Point(672, 55)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(141, 25)
+        Me.Label4.Size = New System.Drawing.Size(172, 25)
         Me.Label4.TabIndex = 12
-        Me.Label4.Text = "MY ENTRIES"
+        Me.Label4.Text = "DIARY ENTRIES"
         '
         'main
         '
