@@ -1,6 +1,6 @@
 # diary-midterm
 
-A simple diary app made with vb.net
+A simple diary made with vb.net
 
 
 
